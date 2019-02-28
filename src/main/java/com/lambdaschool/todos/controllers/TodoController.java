@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -26,8 +25,8 @@ public class TodoController {
   }
 
   @GetMapping("users")
-  public List<Object[]> todosWithUsername() {
-    return new ArrayList<>();
+  public List<Object> todosWithUsername() {
+    return repository.findAllWithNames();
   }
 
   @PostMapping("")

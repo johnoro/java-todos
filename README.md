@@ -30,7 +30,7 @@ Expose the following end points
 - [x] GET /users/name/{username} - return the user based off of the user name
 - [x] GET /todos/id/{todoid} - return the todo based off of the todo id
 
-- [ ] GET /todos/users - return a listing of the todos with its assigned user's name
+- [x] GET /todos/users - return a listing of the todos with its assigned user's name
 - [ ] GET /todos/active - return a listing of the todos not yet completed. // adding this is now a stretch goal
 
 - [x] POST /users - adds a user

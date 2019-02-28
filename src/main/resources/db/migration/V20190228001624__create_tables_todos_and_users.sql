@@ -2,8 +2,6 @@ CREATE TABLE IF NOT EXISTS todos (
     todoid      INTEGER  PRIMARY KEY AUTOINCREMENT
                          NOT NULL,
     description STRING   NOT NULL,
-    datestarted DATETIME,
-    completed   BOOLEAN,
     userid      INTEGER  REFERENCES users (userid)
                          NOT NULL
 );
