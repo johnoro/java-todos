@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS todos (
     description STRING   NOT NULL,
     datestarted DATETIME,
     completed   BOOLEAN,
-    userid      INTEGER  REFERENCES users (userid) 
+    userid      INTEGER  REFERENCES users (userid)
                          NOT NULL
 );
 

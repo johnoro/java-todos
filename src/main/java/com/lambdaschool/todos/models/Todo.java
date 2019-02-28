@@ -17,12 +17,12 @@ public class Todo {
   @Column(nullable = false)
   private String description;
 
+  // dateStarted, completed
+
   @ManyToOne
   @JoinColumn(name = "userid", nullable = false)
   @JsonIgnore
   private User user;
 
   public Todo() {}
-
-  // datestarted, completed
 }

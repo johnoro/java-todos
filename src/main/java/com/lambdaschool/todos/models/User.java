@@ -1,5 +1,6 @@
 package com.lambdaschool.todos.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ public class User {
   private String name;
 
   @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "user")
+  @JsonIgnore
   private Set<Todo> todos;
 
   public User() {}
