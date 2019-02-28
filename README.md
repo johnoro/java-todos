@@ -43,18 +43,18 @@ Expose the following end points
 - [x] DELETE /todos/id/{todoid} - deletes a todo based off its todoid
 
 * Add Swagger Documentation to your REST APIs
-  - [ ] Add custom responses to each of the follow error conditions
+  - [x] Add custom responses to each of the follow error conditions
     * 200 - successfully retrieve list
     * 401 - not authorized for this resource
     * 403 - access to resource forbidden
     * 404 - resource not found
 
   * Add custom Swagger Documentation to each of the follow End Points. The rest of the end points may just have the default documentation.
-      - [ ] GET /todos
-      - [ ] GET /todos/users
+      - [x] GET /todos
+      - [x] GET /todos/users
       - [ ] GET /todos/active // adding this is now a stretch goal
-      - [ ] PUT /todos/id/{todoid}
-      - [ ] DELETE /todos/id/{todoid}
+      - [x] PUT /todos/id/{todoid}
+      - [x] DELETE /todos/id/{todoid}
     - [ ] For a stretch goal - add custom responses to the rest of the end points
 
 - [x] Add flyway data migration

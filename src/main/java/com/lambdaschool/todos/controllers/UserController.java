@@ -2,6 +2,8 @@ package com.lambdaschool.todos.controllers;
 
 import com.lambdaschool.todos.models.User;
 import com.lambdaschool.todos.repositories.UserRepository;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,12 @@ import java.util.List;
 import static org.springframework.util.StringUtils.capitalize;
 
 @RestController
+@ApiResponses(value = {
+  @ApiResponse(code = 200, message = "successfully retrieve resource"),
+  @ApiResponse(code = 401, message = "not authorized for this resource"),
+  @ApiResponse(code = 403, message = "access to resource forbidden"),
+  @ApiResponse(code = 404, message = "resource not found")
+})
 @RequestMapping(path = "users", produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
   @Autowired
