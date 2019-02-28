@@ -57,17 +57,17 @@ Expose the following end points
       - [ ] DELETE /todos/id/{todoid}
     - [ ] For a stretch goal - add custom responses to the rest of the end points
 
-- [ ] Add flyway data migration
+- [x] Add flyway data migration
   * for this project we will just have the starting migration. The DDL for creating the tables can be found in the file tables.DDL
 
-- [ ] the end points should return null when no data is found.
+- [x] the end points should return null when no data is found.
 
-- [ ] change end points so they return data that is deleted or a new copy of updated data
+- [x] change end points so they return data that is deleted or a new copy of updated data
 
 * Expose at least the following the actuator endpoints to help with system mangagement
-   - [ ] /health
-   - [ ] /info
-   - [ ] /metrics
+   - [x] /health
+   - [x] /info
+   - [x] /metrics
    
-   - [ ] Stretch goal - update each of these three actuator endpoints to report your own messages. 
+   - [x] Stretch goal - update each of these three actuator endpoints to report your own messages. 
    
