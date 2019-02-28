@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static org.springframework.util.StringUtils.capitalize;
+
 @RestController
 @RequestMapping(path = "users", produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
@@ -26,12 +28,20 @@ public class UserController {
 
   @GetMapping("name/{name}")
   public User oneByName(@PathVariable String name) {
-    name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
-    return repository.findByName(name);
+    return repository.findByName(
+      capitalize(
+        name.toLowerCase()
+      )
+    );
   }
 
   @PostMapping("")
   public User add(@RequestBody User user) {
+    user.setName(
+      capitalize(
+        user.getName().toLowerCase()
+      )
+    );
     return repository.save(user);
   }
 
