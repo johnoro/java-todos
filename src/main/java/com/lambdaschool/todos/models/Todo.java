@@ -22,5 +22,7 @@ public class Todo {
   @JsonIgnore
   private User user;
 
+  public Todo() {}
+
   // datestarted, completed
 }
