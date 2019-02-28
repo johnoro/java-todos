@@ -23,27 +23,27 @@ The table layouts are as follows:
   
 Expose the following end points
 
-- [ ] GET /users - returns all the users
-- [ ] GET /todos - return all the todos
+- [x] GET /users - returns all the users
+- [x] GET /todos - return all the todos
 
-- [ ] GET /users/id/{userid} - return the user based off of the user id
-- [ ] GET /users/name/{username} - return the user based off of the user name
+- [x] GET /users/id/{userid} - return the user based off of the user id
+- [x] GET /users/name/{username} - return the user based off of the user name
 - [ ] GET /todos/id/{todoid} - return the todo based off of the todo id
 
 - [ ] GET /todos/users - return a listing of the todos with its assigned user's name
 - [ ] GET /todos/active - return a listing of the todos not yet completed. // adding this is now a stretch goal
 
-- [ ] POST /users - adds a user
+- [x] POST /users - adds a user
 - [ ] POST /todos - adds a todo
 
-- [ ] PUT /users/id/{userid} - updates a user based on userid
+- [x] PUT /users/id/{userid} - updates a user based on userid
 - [ ] PUT /todos/id/{todoid} - updates a todo based on todoid
 
-- [ ] DELETE /users/id/{userid} - Deletes a user based off of their userid and deletes all their associated todos
+- [x] DELETE /users/id/{userid} - Deletes a user based off of their userid and deletes all their associated todos
 - [ ] DELETE /todos/id/{todoid} - deletes a todo based off its todoid
 
 * Add Swagger Documentation to your REST APIs
-  * Add custom responses to each of the follow error conditions
+  - [ ] Add custom responses to each of the follow error conditions
     * 200 - successfully retrieve list
     * 401 - not authorized for this resource
     * 403 - access to resource forbidden
