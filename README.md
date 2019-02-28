@@ -17,7 +17,7 @@ The table layouts are as follows:
   * completed boolean (0 = false 1 = true)/ / adding this is now a stretch goal
   * userid foreign key (one user to many todos) not null 
 
-- [ ] USERS
+- [x] USERS
   * userid primary key, not null int
   * username string, not null
   
